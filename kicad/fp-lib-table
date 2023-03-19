@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "pixel_star")(type "KiCad")(uri "${KIPRJMOD}/symbols_footprints/pixel_star.pretty")(options "")(descr ""))
+  (lib (name "graphics")(type "KiCad")(uri "F:/Projekty/KiCAD/G0Boi/graphics/.svg2shenzhen-cache/drawing.pretty")(options "")(descr ""))
+)
