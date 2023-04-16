@@ -1,9 +1,11 @@
 # Arduboy JM
 My homebrew clone of arduboy - arduino-based handheld game console
 
+<p float="left">
+    <img src="pic1.jpg" height=350 />
+    <img src="pic2.jpg" height=350 />
+</p>
 
-<img src="pic1.jpg" height=350>
-<img src="pic2.jpg" height=350>
 
 For the original Arduboy please visit [their website](https://www.arduboy.com/)
 <br/>
@@ -37,14 +39,10 @@ This arduboy has the **FX-Mod** on board - a SPI-Flash chip to hold all the game
 + Flash the bootloader [*arduboy3k-bootloader-menu-promicro-sh1106.hex*](https://github.com/MrBlinky/cathy3k/tree/main/cathy3k)
 <br/>You will need avr isp programmer for that, like [AVRISP MKII](https://www.microchip.com/en-us/development-tool/ATAVRISP2), [USBASP](https://www.fischl.de/usbasp/) or [Arduino as ISP](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP) and [AVRDUDE](https://github.com/mariusgreuel/avrdude/releases) installed.
 <br/>Flash the bootloader with following command (replace COM port and path to .hex file accordingly):
-<br/>
 `avrdude -v -p m32u4 -c avrisp -B 22 -b 19200 -P COM4 -U flash:w:arduboy3k-bootloader-game-promicro-sh1106.hex:i`
-
 + Flash the flashcart 
-<br/>
-This part is tricky, since it involves recompiling all games. On one hand, thanks to great people at arduboy.com, we are able to compile games for different hardware thanks to Homemade package.
-<br/>
-On other hand, arduino IDE is a **BAD** IDE and it is tricky to automate the process (doing it by hand is annoying, since there are 300? 400? games available). 
+<br/>This part is tricky, since it involves recompiling all games. On one hand, thanks to great people at arduboy.com, we are able to compile games for different hardware thanks to Homemade package.
+<br/>On other hand, arduino IDE is a **BAD** IDE and it is tricky to automate the process (doing it by hand is annoying, since there are 300? 400? games available). 
     + Install [Arduino](https://www.arduino.cc/en/software) and [Homemade Package](https://github.com/MrBlinky/Arduboy-homemade-package)
     + Download [Python Utilities from MrBlinky](https://github.com/MrBlinky/Arduboy-Python-Utilities) (for building flashcard image)
     + Download game source (look for github repositories [here](http://www.bloggingadeadhorse.com/cart/Cart.html))
