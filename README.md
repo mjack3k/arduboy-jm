@@ -7,6 +7,7 @@ My homebrew clone of arduboy - arduino-based handheld game console
 
 For the original Arduboy please visit [their website](https://www.arduboy.com/)
 <br/>
+<br/>
 
 ## Description
 This project differs a bit from the official arduboy. 
